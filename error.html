@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <header>
+    
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        
+        <a href="index.html" class="logo">BGoaty<span>.</span></a>
+    
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="products.html">products</a>
+            <a href="review.html">review</a>
+            <a href="contact.html">query</a>
+        </nav>
+    
+        <div id="togglerMode" class="fas fa-sun"></div>
+    
+        <div class="icons">
+            <a href="login.html" class="fas fa-heart"></a>
+            <a href="login.html" class="fas fa-shopping-cart"></a>
+            <a href="login.html" class="fas fa-user"></a>
+        </div>
+    
+    </header>
+
+    <div class="err-container">
+        <h2>Oops! Page Not Found.</h2>
+        <h1>404</h1>
+        <audio id="bgmusic" controls loop src="images/bgmusic.mp3"></audio>
+        <p>This page is still under maintenance.</p>
+        <a href="index.html">Go Back Home</a>
+        <!--idea from: DarkCode YT channel-->
+
+    </div>
+
+    <script>
+
+        let toggler = document.querySelector('#togglerMode');
+        
+        toggler.onclick = () =>{
+        
+            if(toggler.classList.contains('fa-sun')){
+                toggler.classList.replace('fa-sun', 'fa-moon');
+                document.body.classList.add('active');
+            }else{
+                toggler.classList.replace('fa-moon', 'fa-sun');
+                document.body.classList.remove('active');
+            }
+        }
+
+        document.addEventListener('click', musicPlay);
+        function musicPlay() {
+            document.getElementById('bgmusic').play()
+        }
+
+    </script>
+
+    </body>
+    </html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+    
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+    
+    <a href="index.html" class="logo">BGoaty<span>.</span></a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="products.html">products</a>
+        <a href="review.html">review</a>
+        <a href="contact.html">query</a>
+    </nav>
+
+    <div id="togglerMode" class="fas fa-sun"></div>
+
+    <div class="icons">
+        <a href="login.html" class="fas fa-heart"></a>
+        <a href="login.html" class="fas fa-shopping-cart"></a>
+        <a href="login.html" class="fas fa-user"></a>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+<h1 class="heading"> customer's <span>review</span> </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>The goats in Bgoaty are very nice. The boer buck I bought from this site is magneficent. It is very active and it serves as a great investment for a breeder. Highly recommended shop and the seller is very accomodating. My second order!</p>
+        <div class="user">
+            <img src="images/pic-1.png" alt="">
+            <div class="user-info">
+                <h3>lean dre</h3>
+                <span>happy customer</span>
+            </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+    </div>
+
+    <div class="box">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>Top quality goats! BGoaty never disappoints me when it comes to their product's quality. This goat produces plenty of milk in a daily basis. I've been drinking it for a week now and I can already see my skin being moisturized and lightened!</p>
+        <div class="user">
+            <img src="images/pic-2.png" alt="">
+            <div class="user-info">
+                <h3>Mari Car</h3>
+                <span>happy customer</span>
+            </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+    </div>
+
+    <div class="box">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>The quality of meat produced by these goats are superb! The kaldereta that was cooked using this meat for my birthday didn't last long as the visitors kept asking for extra servings of it. I really hope that there will be leftovers for me &lt;3.</p>
+        <div class="user">
+            <img src="images/pic-3.png" alt="">
+            <div class="user-info">
+                <h3>joel ken</h3>
+                <span>happy customer</span>
+            </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+    </div>
+
+</div>
+    
+</section>
+
+<!-- review section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="products.html">products</a>
+            <a href="review.html">review</a>
+            <a href="contact.html">query</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="login.html">my account</a>
+            <a href="login.html">my order</a>
+            <a href="login.html">my favorite</a>
+        </div>
+
+        <div class="box">
+            <h3>locations</h3>
+            <a href="location1.html">Calatagan</a>
+            <a href="location2.html">Pangasinan</a>
+            <a href="location3.html">Cavite</a>
+            <a href="location4.html">Lemery</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="contact.html">+63-945-419-1916</a>
+            <a href="mailto:Bgoaty@gmail.com">Bgoaty@gmail.com</a>
+            <a href="contact.html">Batangas, Philippines - 4200</a>
+            <img src="images/payment.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> marc jethro bayaborda</span> | for educational purposes </div>
+    <!--special thanks to YT: Mr. Web Designer for guide-->
+
+</section>
+<!--reference link used for video content(https://youtu.be/rpZV9mwzzho)-->
+<!-- footer section ends -->
+
+<script>
+
+    let toggler = document.querySelector('#togglerMode');
+    
+    toggler.onclick = () =>{
+    
+        if(toggler.classList.contains('fa-sun')){
+            toggler.classList.replace('fa-sun', 'fa-moon');
+            document.body.classList.add('active');
+        }else{
+            toggler.classList.replace('fa-moon', 'fa-sun');
+            document.body.classList.remove('active');
+        }
+    }
+</script>
+
+</body>
+</html>

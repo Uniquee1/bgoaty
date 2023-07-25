@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+    
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+    
+    <a href="index.html" class="logo">BGoaty<span>.</span></a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="products.html">products</a>
+        <a href="review.html">review</a>
+        <a href="contact.html">query</a>
+    </nav>
+
+    <div id="togglerMode" class="fas fa-sun"></div>
+
+    <div class="icons">
+        <a href="login.html" class="fas fa-heart"></a>
+        <a href="login.html" class="fas fa-shopping-cart"></a>
+        <a href="login.html" class="fas fa-user"></a>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span> Inquir</span>ies</h1>
+
+    <div class="row">
+
+        <form action="">
+            <input type="text" placeholder="name" class="box">
+            <input type="email" placeholder="email" class="box">
+            <input type="number" placeholder="number" class="box">
+            <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="send message" class="btn">
+        </form>
+
+        <div class="image">
+            <img src="images/contact-img.png" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="products.html">products</a>
+            <a href="review.html">review</a>
+            <a href="contact.html">query</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="login.html">my account</a>
+            <a href="login.html">my order</a>
+            <a href="login.html">my favorite</a>
+        </div>
+
+        <div class="box">
+            <h3>locations</h3>
+            <a href="location1.html">Calatagan</a>
+            <a href="location2.html">Pangasinan</a>
+            <a href="location3.html">Cavite</a>
+            <a href="location4.html">Lemery</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="contact.html">+63-945-419-1916</a>
+            <a href="mailto:Bgoaty@gmail.com">Bgoaty@gmail.com</a>
+            <a href="contact.html">Batangas, Philippines - 4200</a>
+            <img src="images/payment.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> marc jethro bayaborda</span> | for educational purposes </div>
+    <!--special thanks to YT: Mr. Web Designer for guide-->
+
+</section>
+<!--reference link used for video content(https://youtu.be/rpZV9mwzzho)-->
+<!-- footer section ends -->
+
+<script>
+
+    let toggler = document.querySelector('#togglerMode');
+    
+    toggler.onclick = () =>{
+    
+        if(toggler.classList.contains('fa-sun')){
+            toggler.classList.replace('fa-sun', 'fa-moon');
+            document.body.classList.add('active');
+        }else{
+            toggler.classList.replace('fa-moon', 'fa-sun');
+            document.body.classList.remove('active');
+        }
+    }
+</script>
+
+</body>
+</html>
